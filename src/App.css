@@ -1,0 +1,407 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-cont {
+  display: flex;
+}
+
+.list-cart-cont {
+  display: flex;
+}
+
+.list-cont {
+  list-style-type: none;
+  display: flex;
+  padding-right: 9rem;
+}
+
+.list-item {
+  padding-right: 1rem;
+}
+
+.cart-image {
+  height: 40px;
+  width: 60px;
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(90deg, #5ebcfb, #f24f80, #779afd, #48baf3);
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  min-height: 80vh; /* Adjusted for responsiveness */
+  border-bottom-right-radius: 90rem;
+}
+
+.head-cont-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 2rem; /* Adjusted for flexibility */
+}
+
+.header-content {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.header-content h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.header-content p {
+  color: white;
+  margin: 20px 0;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.shop-now, .about-us {
+  background-color: white;
+  color: #8fd3f4;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.shop-now:hover, .about-us:hover {
+  background-color: #48baf3;
+  color: white;
+}
+
+/* Featured Product Section */
+.featured-product {
+  position: absolute;
+  height: 300px;
+  width: 500px;
+  right: 50px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.new-tag {
+  background-color: #4a90e2;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.featured-img {
+  max-width: 220px;
+  display: block;
+  margin: 20px auto;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(161, 158, 158);
+}
+
+.price {
+  color: blue;
+}
+
+/* Product Grid Section */
+.products {
+  margin: 50px 0;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card img {
+  max-width: 100px;
+  margin: 0 auto 20px;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Hover effect */
+}
+
+.buy-now {
+  background-color: #8fd3f4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Best Price Section */
+.best-price {
+  background-image: linear-gradient(#38efcb,#52d0e3,#eb3ae0);
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 120rem;
+}
+
+.best-price-head{
+  font-size: 3rem;
+  color: #43474f;
+  font-family: Playfair Display SC;
+}
+
+.product-name{
+  font-size: 2%;
+}
+
+.price-details {
+  margin: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 10px;
+}
+
+.new-price {
+  font-size: 2rem;
+  color: #e74c3c;
+}
+
+.product-description {
+  margin: 20px 0;
+  color: #c3c7ca;
+}
+
+.scroll-image{
+  background-color: #ffffff;
+  margin-top: 8rem;
+  color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .head-cont-details {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .best-price {
+    margin-top: 20px;
+  }
+
+  .featured-product {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin-top: 20px;
+  }
+}
+.text{
+  color: #666;
+}
+
+.buy-now {
+  background-color: transparent;
+  font-size: 15px;
+  color: rgb(99, 185, 235);
+  padding: 10px 15px;
+  border: 2px solid ;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buy-now:hover {
+  background-color: #0d8cfb; /* Change color on hover */
+  transform: scale(1.1);     /* Slightly enlarge the button */
+  color: #fff;               /* Ensure text color stays white */
+}
+.view-button{
+  background-color: transparent;
+  font-size: 15px;
+  color: rgb(99, 185, 235);
+  margin-top: 2rem;
+  padding: 10px 15px;
+  border: 2px solid ;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.view-button:hover {
+  background-color: #0d8cfb; /* Change color on hover */
+  transform: scale(1.1);     /* Slightly enlarge the button */
+  color: #fff;               /* Ensure text color stays white */
+}
+.all-product-head{
+  color: #282727;
+}
+.border{
+  width: 25px;
+  border-width: 2px;
+}
+.scroll-image{
+  background-color: aqua;
+}
+.product-name{
+  color: rgb(109, 108, 108);
+  font-size: 15px;
+  font-weight: 550;
+}
+
+/* General Styles */
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.filter-section, .sort-section {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  color: #9fa7b1;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #4a5568;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+select:hover, select:focus {
+  border-color: #48baf3;
+}
+
+/* Optional: To make the dropdown arrow more visible */
+select::-ms-expand {
+  display: none;
+}
+
+.end-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.best-price-head{
+  color: #282727;
+  font-size: 20px;
+}
+.last-image{
+  box-shadow: 0px 4px 50px 0px rgba(120, 143, 156, 0.25);
+  border-radius: 20rem;
+  height: 60%;
+  width:60%;
+  background-color: #ffffff;
+}
+
+.image{
+  height: 400px;
+}
+.end-product-name{
+  font-family: Playfair Display SC;
+  font-size: 40px;
+  color: #57585a;
+}
+.activate{
+  background-color: #48baf3;
+  color: #ffffff;
+  width: 140px;
+}
